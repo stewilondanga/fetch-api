@@ -54,13 +54,13 @@ footer {
   text-align: center;
 }
 
-/*blockquote {
+blockquote {
   border-left: 5px solid #ddd;
   padding: 0 .8em 0 1.5em;
   margin: 2em 0;
 }
 
-code {
+/*code {
   display: block;
   background-color: #eee;
   border: 1px solid #ccc;
