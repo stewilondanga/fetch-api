@@ -69,13 +69,13 @@ code {
   white-space: pre-wrap;
 }
 
-/*li a {
+li a {
   font-weight: bold;
   color: darkcyan;
   line-height: 2;
 }
 
-.embed {
+/*.embed {
   margin: 2em auto;
 }
 
