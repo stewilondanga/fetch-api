@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,82 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+body {
+  background-color: #eee;
+  line-height: 1.5;
+}
+
+header,
+main {
+  margin: 1em .5em;
+}
+
+header {
+  background-color: #333;
+  margin: 0;
+  padding: .8em;
+  border-bottom: 3px solid gold;
+  color: gold;
+  font-size: 2em;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  color: black;
+}
+
+section {
+  margin: 3em 0;
+}
+section h2 {
+  border-bottom: 1px solid goldenrod;
+  padding-bottom: .8em;
+  color: goldenrod;
+  text-shadow: 1px 1px 2px #333;
+}
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+}
+
+blockquote {
+  border-left: 5px solid #ddd;
+  padding: 0 .8em 0 1.5em;
+  margin: 2em 0;
+}
+
+code {
+  display: block;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: .5em;
+  margin: 1.8em 0;
+  white-space: pre-wrap;
+}
+
+li a {
+  font-weight: bold;
+  color: darkcyan;
+  line-height: 2;
+}
+
+.embed {
+  margin: 2em auto;
+}
+
+@media (min-width: 40em) {
+  main {
+    max-width: 35em;
+    margin: 2em auto;
+    padding: 1em 2em;
+  }
+  code {
+    padding: 1em;
+  }
 }
 
 .containers {
