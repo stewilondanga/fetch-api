@@ -75,11 +75,11 @@ li a {
   line-height: 2;
 }
 
-/*.embed {
+.embed {
   margin: 2em auto;
 }
 
-@media (min-width: 40em) {
+/*@media (min-width: 40em) {
   main {
     max-width: 35em;
     margin: 2em auto;
