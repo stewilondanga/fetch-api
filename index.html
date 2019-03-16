@@ -21,6 +21,95 @@
         </a>
     </div>
 
+    <header>
+      <h1>Fetch API</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>What is it?</h2>
+
+        <blockquote>
+          <p>The Fetch API provides an interface for fetching resources (including across the network). It will seem familiar to anyone who has used XMLHttpRequest, but the new API provides a more powerful and flexible feature set. <cite>MDN Web Docs</cite></p>
+        </blockquote>
+
+        <p>In short... it's great for working with APIs!</p>
+      </section>
+
+      <section>
+        <h2>Why not XHR?</h2>
+
+        <p>Fetch is promised based. Fetch requires less code. You could still access APIs this way...</p>
+
+        <code>
+    var xmlhttp = new XMLHttpRequest();
+    var url = "myTutorials.txt";
+
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            myFunction(myArr);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    function myFunction(arr) {
+        var out = "";
+        var i;
+        for(i = 0; i < arr.length; i++) {
+            out += `&lt;a href="${arr[i].url}"&gt;${arr[i].display}&lt;/a&gt;&lt;br&gt;`;
+        }
+        document.getElementById("id01").innerHTML = out;
+    }
+        </code>
+
+        <p>Or you could start writing them this way...</p>
+
+        <code>
+    fetch(url)
+    .then( response => response.json())
+    .then(myFunction)
+    .catch( error => requestError(error));
+        </code>
+      </section>
+
+      <section>
+        <h2>Can I Use It Now?</h2>
+
+        <p class="ciu_embed embed" data-feature="fetch" data-periods="future_1,current,past_1,past_2" data-accessible-colours="false">
+          <a href="http://caniuse.com/#feat=fetch">Can I Use fetch?</a> Data on support for the fetch feature across the major browsers from caniuse.com.
+        </p>
+
+        <p><strong>Yes!</strong> Well... maybe not with &lt;= IE 11, unless you add a polyfill, or Opera Mini. Or older versions of the Android browser. If any of those are deal breakers, then <strong>NO</strong>.</p>
+      </section>
+
+      <section>
+        <h2>See the Fetch API in action</h2>
+
+        <p data-height="400" data-theme-id="dark" data-slug-hash="BOByON" data-default-tab="result" data-user="digilou" data-pen-title="Local Weather with Fetch" class="codepen embed">See the Pen <a href="https://codepen.io/digilou/pen/BOByON/">Local Weather with Fetch</a> by Amy C (<a href="https://codepen.io/digilou">@digilou</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+      </section>
+
+      <section>
+        <h2>Learn In-Depth</h2>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch | MDN Web Docs</a></li>
+          <li><a href="https://developers.google.com/web/updates/2015/03/introduction-to-fetch">Introduction to fetch() | Google Developers</a></li>
+          <li><a href="https://davidwalsh.name/fetch">Fetch API | David Walsh Blog</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2018 Amy Carney
+    </footer>
+
+    <!-- Can I use embed -->
+    <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
+    <!-- CodePen embed -->
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
