@@ -79,18 +79,19 @@ li a {
   margin: 2em auto;
 }
 
-/*@media (min-width: 40em) {
+@media (min-width: 40em) {
   main {
     max-width: 35em;
     margin: 2em auto;
     padding: 1em 2em;
   }
+
   code {
     padding: 1em;
   }
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
