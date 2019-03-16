@@ -38,10 +38,11 @@ main {
   color: black;
 }
 
-/*section {
+section {
   margin: 3em 0;
 }
-section h2 {
+
+/*section h2 {
   border-bottom: 1px solid goldenrod;
   padding-bottom: .8em;
   color: goldenrod;
