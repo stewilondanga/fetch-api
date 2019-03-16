@@ -23,7 +23,6 @@ main {
   margin: 1em .5em;
 }
 
-/*
 header {
   background-color: #333;
   margin: 0;
@@ -34,7 +33,7 @@ header {
   text-align: center;
 }
 
-main {
+/*main {
   background-color: white;
   color: black;
 }
